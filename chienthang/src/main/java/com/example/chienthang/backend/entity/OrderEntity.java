@@ -7,6 +7,8 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.Date;
+
 @Entity
 @Table(name = "ct_order")
 @Getter
@@ -18,4 +20,22 @@ public class OrderEntity {
 
     @Column(name = "order_name")
     private String oderName;
+
+    @Column(name = "customer_name")
+    private String customerName;
+
+    @Column(name = "status")
+    private String status;
+
+    @Column(name = "shipping_location")
+    private String shippingLocation;
+
+    @Column(name = "amount")
+    private Long amount;
+
+    @Column(name = "created_date")
+    private Date createdDate;
+
+    @Column(name = "created_by")
+    private String createdBy;
 }

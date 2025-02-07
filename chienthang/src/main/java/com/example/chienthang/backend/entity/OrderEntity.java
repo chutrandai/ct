@@ -16,10 +16,10 @@ import java.util.Date;
 public class OrderEntity {
     @Id
     @Column(name = "order_id")
-    private String oderId;
+    private String orderId;
 
     @Column(name = "order_name")
-    private String oderName;
+    private String orderName;
 
     @Column(name = "customer_name")
     private String customerName;
